@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="UML Class Diagram">
+  <ClassDiagramComponents>
+    <Class xPosition="50.0" yPosition="90.0" package="Calificaciones" name="Calificar" visibility="public">
+      <Constructors/>
+      <Fields/>
+      <Methods>
+        <Method name="getMayorNotas" visibility="package" returnType="double">
+          <Argument type="double[]" name="nota"/>
+        </Method>
+        <Method name="getMenorNotas" visibility="package" returnType="double">
+          <Argument type="double[]" name="nota"/>
+        </Method>
+        <Method name="getMayorIndice" visibility="package" returnType="String">
+          <Argument type="double[]" name="nota"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class xPosition="300.0" yPosition="90.0" package="Calificaciones" name="Calificaciones" visibility="public">
+      <Constructors/>
+      <Fields/>
+      <Methods>
+        <Method name="main" visibility="public" returnType="void" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>

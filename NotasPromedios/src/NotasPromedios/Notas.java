@@ -111,8 +111,6 @@ class Notas {
         }
         return menor;     
     }
-    
-    
 
 }
 
