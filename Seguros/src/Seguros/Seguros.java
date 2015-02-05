@@ -1,6 +1,8 @@
 package Seguros;
 
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.GregorianCalendar;
 
 class Seguros {
     private String cliente;
@@ -8,6 +10,8 @@ class Seguros {
     private int aniofabricacion;
     private String transporte;
     private double mercado;
+    Calendar fecha = new GregorianCalendar();
+    private int anio = fecha.get(Calendar.YEAR);
     
     public Seguros()
     {
@@ -67,9 +71,9 @@ class Seguros {
     {
         double precio = 0.0;
         if(transporte == "publico")
-            precio = (( mercado * 1.15 ) / 2.25 ) - (((2015 - aniofabricacion) / 100.0) * mercado);  
+            precio = (( mercado * 1.15 ) / 2.25 ) - (((anio - aniofabricacion) / 100.0) * mercado);  
         else if(transporte == "privado")
-            precio = ( mercado * 0.5 ) - (((2015 - aniofabricacion) / 100.00) * mercado);
+            precio = ( mercado * 0.5 ) - (((anio - aniofabricacion) / 100.00) * mercado);
         else if(transporte == "lujo")
             precio = mercado * 0.12;
         return precio;
