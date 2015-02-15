@@ -1,4 +1,3 @@
-
 package babyshower;
 import org.junit.Test;
 import static org.junit.Assert.*;
@@ -47,8 +46,7 @@ public class AsistenteTest {
         assertEquals(11, asistente.getEdad());
     }
     
-    
-    
+
     @Test
     public void asistenteDebeRecibirLaEdadDeLaAsistenteALaQueSeLoPregunta(){
         
