@@ -13,7 +13,7 @@ public class EmpleadoDAOMemoryImpl implements EmpleadoDAO{
         
     }
     
-    //@Override
+    @Override
     public void add(Empleado emp) throws EmpleadoException {
         if(empleadoArray[emp.getId()] != null) {
             throw new EmpleadoException("Error adicionar empleado, el documento de empleado ya existe " + emp.getId());
